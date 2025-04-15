@@ -25,13 +25,13 @@ nav {
   width: 100%;
 }
 
-nav>ul {
+nav > ul {
   display: flex;
   list-style: none;
   gap: 30px;
 }
 
-nav>ul>a {
+nav > ul > a {
   text-decoration: none;
   color: black;
   cursor: pointer;
@@ -42,7 +42,7 @@ nav>ul>a {
   margin-inline: auto;
 }
 
-#abstract>h2 {
+#abstract > h2 {
   margin-block: 20px;
 }
 
@@ -62,7 +62,7 @@ p {
   color: white;
 }
 
-#home>h1 {
+#home > h1 {
   background-color: rgba(0, 0, 0, 0.4);
   padding: 20px;
   font-size: 50px;
@@ -77,15 +77,15 @@ p {
   margin-block: 40px;
 }
 
-#work>h2 {
+#work > h2 {
   margin-block: 20px;
 }
 
-#work>ul>div>li {
+#work > ul > div > li {
   padding-block: 5px;
 }
 
-#work>ol {
+#work > ol {
   padding: 20px;
   list-style: upper-roman inside;
   display: flex;
@@ -93,11 +93,11 @@ p {
   justify-content: center;
 }
 
-#work>ol>li::marker {
+#work > ol > li::marker {
   font-weight: bold;
 }
 
-#work>ol>li {
+#work > ol > li {
   margin-block: 10px;
 }
 
@@ -107,7 +107,7 @@ p {
   margin-block: 40px;
 }
 
-#contributors>h2 {
+#contributors > h2 {
   text-align: center;
 }
 
@@ -119,18 +119,18 @@ p {
   gap: 30px;
 }
 
-#work>ul {
+#work > ul {
   margin-block: 20px;
   display: flex;
   justify-content: space-evenly;
   list-style-position: inside;
 }
 
-#work>ul>div>h3 {
+#work > ul > div > h3 {
   margin-block: 10px;
 }
 
-#images>img {
+#images > img {
   width: 30%;
   height: auto;
   object-fit: contain;
@@ -145,11 +145,11 @@ p {
   align-items: center;
 }
 
-#diagram>div {
+#diagram > div {
   width: 40%;
 }
 
-#diagram>img {
+#diagram > img {
   width: 40%;
 }
 
@@ -161,15 +161,42 @@ p {
     gap: 20px;
   }
 
-  #home>h1 {
+  #home > h1 {
     font-size: 25px;
   }
 
-  #diagram>div {
+  #diagram > div {
     width: 100%;
   }
 
-  #diagram>img {
+  #diagram > img {
     width: 100%;
   }
+}
+
+.git-btn {
+  display: inline-flex;
+  align-items: center;
+  background-color: #000000;
+  color: white;
+  padding: 10px 16px;
+  font-size: 16px;
+  font-weight: bold;
+  border: 2px solid black;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  transition: all 0.3s ease;
+}
+
+.git-btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.git-btn img {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
 }
