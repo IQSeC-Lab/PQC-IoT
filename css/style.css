@@ -14,7 +14,12 @@ body {
   background: #faf9f7;
   /* color: white; */
 }
-
+h2 {
+  font-size: 35px;
+}
+h3 {
+  font-size: 25px;
+}
 nav {
   display: flex;
   justify-content: space-between;
@@ -36,7 +41,9 @@ nav > ul > a {
   color: black;
   cursor: pointer;
 }
-
+li {
+  font-size: 20px;
+}
 #abstract {
   width: 70%;
   margin-inline: auto;
@@ -48,6 +55,7 @@ nav > ul > a {
 
 p {
   text-align: justify;
+  font-size: 20px;
 }
 
 #home {
@@ -122,6 +130,8 @@ p {
 #work > ul {
   margin-block: 20px;
   display: flex;
+  flex-direction: column;
+  gap: 15px;
   justify-content: space-evenly;
   list-style-position: inside;
 }
@@ -131,7 +141,7 @@ p {
 }
 
 #images > img {
-  width: 30%;
+  width: 20%;
   height: auto;
   object-fit: contain;
 }
@@ -146,7 +156,7 @@ p {
 }
 
 #diagram > div {
-  width: 40%;
+  width: 52%;
 }
 
 #diagram > img {
@@ -179,24 +189,24 @@ p {
   align-items: center;
   background-color: #000000;
   color: white;
-  padding: 10px 16px;
-  font-size: 16px;
+  padding: 16px 24px; /* larger padding */
+  font-size: 20px; /* bigger text */
   font-weight: bold;
   border: 2px solid black;
-  border-radius: 6px;
+  border-radius: 8px; /* slightly rounder */
   cursor: pointer;
   text-decoration: none;
   font-family: Arial, sans-serif;
   transition: all 0.3s ease;
 }
 
+.git-btn img {
+  width: 28px; /* bigger logo */
+  height: 28px;
+  margin-right: 10px;
+}
+
 .git-btn:hover {
   background-color: white;
   color: black;
-}
-
-.git-btn img {
-  width: 20px;
-  height: 20px;
-  margin-right: 8px;
 }

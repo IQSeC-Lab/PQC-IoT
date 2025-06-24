@@ -71,23 +71,37 @@
       </p>
 
       <h2>Contributions</h2>
-      The contributions of this projet are as follows:
-      <ul>
-        <div>
-          <li>insert</li>
-          <li>insert</li>
-          <li>insert</li>
-          <li>insert</li>
-        </div>
-      </ul>
+      <p>The contributions of this projet are as follows:</p>
+      <!-- <ul>
+          <li>We present a <b>standardized, reproducible benchmarking methodology</b> for evaluating PQC algorithms using a 
+            TLS-inspired client-server model deployed <b>on constrained embedded platforms</b>.</li>
+          <li>We implement and evaluate three NIST-designated PQC KEMs -- BIKE, HQC, and CRYSTALS-Kyber, 
+          at multiple security levels, measuring execution time, power consumption, memory usage, and thermal behavior on Raspberry Pi-based systems.</li>
+          <li>Our findings show that <b>CRYSTALS-Kyber</b> provides the most favorable trade-off across performance metrics, 
+            demonstrating <b>high suitability</b> for secure deployment in constrained IoT environments.</li>
+          <li>We identify key trade-offs in BIKE and HQC, showing that while BIKE achieves the lowest memory usage, 
+            it incurs significant latency and power costs at higher security levels; HQC offers moderate runtime efficiency but 
+            suffers from high memory demand and thermal overhead.</li>
+      </ul> -->
+      <ol type="1">
+          <li>We present a <b>standardized, reproducible benchmarking methodology</b> for evaluating PQC algorithms using a 
+            <b>TLS-inspired client-server model</b> deployed <b>on constrained embedded platforms</b>.</li>
+          <li>We implement and evaluate three <b>NIST-designated PQC KEMs</b> -- <b>BIKE</b>, <b>HQC</b>, and <b>CRYSTALS-Kyber</b>, 
+          at multiple security levels, measuring execution time, power consumption, memory usage, and thermal behavior on <b>Raspberry Pi-based systems</b>.</li>
+          <li>Our findings show that <b>CRYSTALS-Kyber</b> provides the most favorable trade-off across performance metrics, 
+            demonstrating <b>high suitability</b> for secure deployment in constrained <b>IoT environments</b>.</li>
+          <li>We identify key trade-offs in <b>BIKE</b> and <b>HQC</b>, showing that while <b>BIKE</b> achieves the <b>lowest memory usage</b>, 
+            it incurs <b>significant latency and power costs</b> at higher security levels; <b>HQC</b> offers moderate runtime efficiency but 
+            suffers from <b>high memory demand</b> and <b>thermal overhead</b>.</li>
+      </ol>
       <br />
       <h3>Methodology</h3>
-      This study evaluates the performance of three post-quantum key
+      <p>This study evaluates the performance of three post-quantum key
       encapsulation mechanisms (KEMs) -- BIKE, CRYSTALS-Kyber, and HQC, within a
       simulated client-server communication framework. The goal is to assess the
       feasibility of deploying these algorithms on constrained embedded systems
       by measuring their power consumption, execution time, memory usage, and
-      communication throughput.
+      communication throughput.</p>
       <div id="diagram">
         <div>
           <h3 style="margin-block: 15px">Experimental Setup</h3>
@@ -142,7 +156,7 @@
         independently into the communication protocol to allow for a fair
         evaluation.
 
-        <div style="display: flex; justify-content: center; align-items: center; height: 5rem;">
+        <div style="display: flex; justify-content: center; align-items: center; height: 2rem;padding: 3.7rem;">
           <a href="https://github.com/IQSeC-Lab/PQC_Optimization" class="git-btn">
             <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="Git Logo">
             GitHub
