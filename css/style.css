@@ -34,6 +34,7 @@ nav > ul {
   display: flex;
   list-style: none;
   gap: 30px;
+  align-items: center;
 }
 
 nav > ul > a {
@@ -59,8 +60,9 @@ p {
 }
 
 #home {
-  background: url("../img/utepcarousel.png");
+  /* background: url("../img/utepcarousel.png"); */
   height: 500px;
+  /* background-color: rgba(0, 0, 0, 0.45); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -71,12 +73,12 @@ p {
 }
 
 #home > h1 {
-  background-color: rgba(0, 0, 0, 0.4);
-  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 6px;
   font-size: 50px;
   text-align: center;
-  width: 50%;
-  margin-block: 40px;
+  width: 60%;
+  margin-block: 45px;
 }
 
 #work {
@@ -190,6 +192,7 @@ p {
   background-color: #000000;
   color: white;
   padding: 16px 24px; /* larger padding */
+
   font-size: 20px; /* bigger text */
   font-weight: bold;
   border: 2px solid black;
@@ -198,6 +201,7 @@ p {
   text-decoration: none;
   font-family: Arial, sans-serif;
   transition: all 0.3s ease;
+  margin-right: 20px;
 }
 
 .git-btn img {
@@ -209,4 +213,61 @@ p {
 .git-btn:hover {
   background-color: white;
   color: black;
+}
+.ppr-btn {
+  display: inline-flex;
+  align-items: center;
+  background-color: #000000;
+  color: white;
+  padding: 16px 24px; /* larger padding */
+
+  font-size: 20px; /* bigger text */
+  font-weight: bold;
+  border: 2px solid black;
+  border-radius: 8px; /* slightly rounder */
+  cursor: pointer;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  transition: all 0.3s ease;
+  margin-right: 20px;
+}
+
+.ppr-btn img {
+  width: 28px; /* bigger logo */
+  height: 28px;
+  margin-right: 10px;
+}
+
+.ppr-btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.material-symbols-outlined {
+  font-family: "Material Symbols Outlined";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 28px; /* size of the icon */
+  display: inline-block;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  white-space: nowrap;
+  direction: ltr;
+  -webkit-font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+
+  margin-right: 10px;
+  transition: all 0.3s ease;
+}
+.ppr-btn:hover .material-symbols-outlined {
+  color: black;
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.logo {
+  height: 40px;
+  display: block;
 }

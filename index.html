@@ -5,23 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title></title>
     <link href="css/style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
   </head>
 
   <body>
     <nav>
-      <h2>Evaluating Post-Quantum Cryptographic Algorithms on Resource-Constrained Devices</h2>
+      <!-- <h2>Evaluating Post-Quantum Cryptographic Algorithms on Resource-Constrained Devices</h2> -->
       <ul>
         <a href="#home">
-          <li>Home</li>
+          <li><img src="img/IQSec-logo-V3.png" alt="Home" class="logo"></li>
         </a>
         <a href="#abstract">
           <li>Abstract</li>
         </a>
-        <a href="#work">
-          <li>Work Done So Far</li>
+        <a href="#Introduction">
+          <li>Introduction</li>
         </a>
-        <a href="#contributors">
-          <li>Contributors</li>
+        <a href="#contribution">
+          <li>Contribution</li>
+        </a>
+        <a href="#methodology">
+          <li>Methodology</li>
+        </a>
+        <a href="#acknow">
+          <li>Acknowledgments</li>
         </a>
       </ul>
     </nav>
@@ -31,6 +38,24 @@
         Devices
       </h1>
     </div>
+    <p class="c" style="text-align: center;">
+      This Paper is accepted to IEEE International Conference on Quantum Computing and Engineering (QCE25)
+    </p>
+    <div style="display: flex; justify-content: center; align-items: center; height: 2rem;padding: 3.7rem;">
+          <a href="https://github.com/IQSeC-Lab/PQC_Optimization" class="git-btn">
+            <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="Git Logo">
+            GitHub
+    
+          <a href="insert link" class="ppr-btn">
+            <!-- <img src="img/article.svg" alt="article link"> -->
+             <span class="material-symbols-outlined">article</span>
+           Paper Link
+          </a>
+        </div>
+        
+
+
+
     <div id="abstract">
       <h2>Abstract</h2>
       <p>
@@ -53,7 +78,7 @@
       </p>
     </div>
     <div id="work">
-      <h2>Introduction</h2>
+      <h2 id="Introduction">Introduction</h2>
       <p>
         In today’s world, millions—if not billions—of people use a wide variety
         of devices. This ranges from the typical gadgets like phones, laptops,
@@ -70,19 +95,9 @@
         vulnerabilities remain that have not been thoroughly addressed.
       </p>
 
-      <h2>Contributions</h2>
+      <h2 id="contribution">Contributions</h2>
       <p>The contributions of this projet are as follows:</p>
-      <!-- <ul>
-          <li>We present a <b>standardized, reproducible benchmarking methodology</b> for evaluating PQC algorithms using a 
-            TLS-inspired client-server model deployed <b>on constrained embedded platforms</b>.</li>
-          <li>We implement and evaluate three NIST-designated PQC KEMs -- BIKE, HQC, and CRYSTALS-Kyber, 
-          at multiple security levels, measuring execution time, power consumption, memory usage, and thermal behavior on Raspberry Pi-based systems.</li>
-          <li>Our findings show that <b>CRYSTALS-Kyber</b> provides the most favorable trade-off across performance metrics, 
-            demonstrating <b>high suitability</b> for secure deployment in constrained IoT environments.</li>
-          <li>We identify key trade-offs in BIKE and HQC, showing that while BIKE achieves the lowest memory usage, 
-            it incurs significant latency and power costs at higher security levels; HQC offers moderate runtime efficiency but 
-            suffers from high memory demand and thermal overhead.</li>
-      </ul> -->
+  
       <ol type="1">
           <li>We present a <b>standardized, reproducible benchmarking methodology</b> for evaluating PQC algorithms using a 
             <b>TLS-inspired client-server model</b> deployed <b>on constrained embedded platforms</b>.</li>
@@ -95,7 +110,7 @@
             suffers from <b>high memory demand</b> and <b>thermal overhead</b>.</li>
       </ol>
       <br />
-      <h3>Methodology</h3>
+      <h3 id="methodology">Methodology</h3>
       <p>This study evaluates the performance of three post-quantum key
       encapsulation mechanisms (KEMs) -- BIKE, CRYSTALS-Kyber, and HQC, within a
       simulated client-server communication framework. The goal is to assess the
@@ -156,20 +171,25 @@
         independently into the communication protocol to allow for a fair
         evaluation.
 
-        <div style="display: flex; justify-content: center; align-items: center; height: 2rem;padding: 3.7rem;">
-          <a href="https://github.com/IQSeC-Lab/PQC_Optimization" class="git-btn">
-            <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="Git Logo">
-            GitHub
-          </a>
-        </div>
+        
         
       </p>
     </div>
+
+    <div id="work">
+      <h2 id="acknow"> Acknowledgments</h2>
+      <p>
+        Jesus Lopez is funded by the Department of Computer Science at UTEP. Viviana Cadena is funded by the Cyber Halo Innovation Research Program (CHIRP) at Pacific Northwest National Laboratory (PNNL).
+      </p>
+    </div>
+
+
     <div id="contributors">
       <h2>Contributors</h2>
       <div id="images">
         <img src="img/utep.png" alt="UTEP logo" />
         <img src="img/IQSec-logo-V3.png" alt="IQSec-logo" />
+        <img src="img/pnnl.svg" alt="pnnl logo"/>
       </div>
     </div>
   </body>
